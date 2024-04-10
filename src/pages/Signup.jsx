@@ -3,9 +3,8 @@ import { TextField, Button } from "@mui/material";
 import Paper from "@mui/material/Paper";
 import axios from "axios";
 import { useState } from "react";
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Signup() {
   const [name, setName] = useState("");
@@ -17,7 +16,7 @@ export default function Signup() {
     e.preventDefault();
     try {
       const url = `${import.meta.env.VITE_APP_BASE_URL}/user/signup`;
-      console.log(url)
+      console.log(url);
       const response = await axios.post(
         url,
         { name, username, email, password },
@@ -31,7 +30,7 @@ export default function Signup() {
         setEmail("");
         setPassword("");
         window.location.href = `/profile/${response.data.userId}`;
-        toast.success('User signed up successfully', {
+        toast.success("User signed up successfully", {
           position: "bottom-center",
           autoClose: 5000,
           hideProgressBar: false,
@@ -41,11 +40,10 @@ export default function Signup() {
           progress: undefined,
           theme: "light",
         });
-
       }
     } catch (error) {
       console.log(error);
-      toast.error('Failed to sign up profile', {
+      toast.error("Failed to sign up profile", {
         position: "bottom-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -61,7 +59,7 @@ export default function Signup() {
   return (
     <>
       <Paper>
-      <ToastContainer />
+        <ToastContainer />
         <div className="flex flex-col lg:flex-row items-center justify-center">
           <div className="lg:w-1/2">
             <img
@@ -100,10 +98,7 @@ export default function Signup() {
                   </div>
 
                   <div className="w-full lg:w-1/2 pl-2">
-                    <label
-                      htmlFor="username"
-                      className="font-semibold text-xl"
-                    >
+                    <label htmlFor="username" className="font-semibold text-xl">
                       Username
                     </label>
                     <TextField
