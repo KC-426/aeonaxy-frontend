@@ -21,7 +21,7 @@ const Header = () => {
           <input type="text" placeholder="Search..." className="bg-gray-200 focus:outline-none focus:bg-white border-transparent focus:border-gray-300 px-3 py-3 rounded-md text-sm font-medium text-gray-700" />
         </div>
         <div className="flex items-center">
-          <img src="/src/images/user.jpeg" alt="Profile" className="h-8 w-8 rounded-full" />
+          <img src="/images/user.jpeg" alt="Profile" className="h-8 w-8 rounded-full" />
         </div>
         <div className="flex items-center">
           <button className="bg-pink-500 hover:bg-pink-600 text-white font-bold px-4 py-3 rounded-md text-sm font-medium">Upload</button>

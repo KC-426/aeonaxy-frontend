@@ -66,7 +66,7 @@ export default function Signup() {
           <div className="lg:w-1/2">
             <img
               className="h-screen w-full object-cover"
-              src="/src/images/signup.jpg"
+              src="/images/signup.jpg"
               alt=""
             />
           </div>

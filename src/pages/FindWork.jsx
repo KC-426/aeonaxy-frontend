@@ -20,7 +20,7 @@ export default function FindWork() {
           <div className="hire-work-data flex-1 p-4 md:p-8 w-full md:w-1/3 h-400">
             <div className="flex justify-center">
               <img
-                src="/src/images/designer.jpg"
+                src="/images/designer.jpg"
                 alt=""
                 className="h-full w-auto"
               />
@@ -32,7 +32,7 @@ export default function FindWork() {
           <div className="hire-work-data flex-1 p-4 md:p-8 w-full md:w-1/3 h-400">
             <div className="flex justify-center">
               <img
-                src="/src/images/hire-designer.jpg"
+                src="/images/hire-designer.jpg"
                 alt=""
                 className="h-full w-auto"
               />
@@ -44,7 +44,7 @@ export default function FindWork() {
           <div className="hire-work-data flex-1 p-4 md:p-8 w-full md:w-1/3 h-400">
             <div className="flex justify-center">
               <img
-                src="/src/images/insp.jpg"
+                src="/images/insp.jpg"
                 alt=""
                 height={"400px"}
               />
