@@ -1,27 +1,29 @@
-import React, { createContext } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Signup from "./pages/Signup";
 import Profile from "./pages/Profile";
 import FindWork from "./pages/FindWork";
-
-export const AppContext = createContext();
-
+import BASE_URL from "../config"; 
 
 function App() {
-
   return (
     <div>
-          <AppContext.Provider>
-      <BrowserRouter>
+      <Router>
         <Routes>
-          <Route path="/" element={<Signup />} />
-          <Route path="/profile/:userId" element={<Profile />} />
-          <Route path="/find-work" element={<FindWork />} />
-
+          <Route
+            path={BASE_URL}
+            exact={true}
+            element={<Signup />}
+          />
+          <Route
+            path={BASE_URL + "profile/:userId"}
+            element={<Profile />}
+          />
+          <Route
+            path={BASE_URL + "find-work"}
+            element={<FindWork />}
+          />
         </Routes>
-      </BrowserRouter>
-      </AppContext.Provider>
-
+      </Router>
     </div>
   );
 }
