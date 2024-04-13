@@ -1,12 +1,15 @@
-import "../App.css";
-import { TextField, Button } from "@mui/material";
-import Paper from "@mui/material/Paper";
+import React, { useState } from 'react';
 import axios from "axios";
-import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom"; 
+import Paper from "@mui/material/Paper";
+import TextField from "@mui/material/TextField"; 
 
-export default function Signup() {
+
+const Signup = () => {
+  const navigate = useNavigate();
+
   const [name, setName] = useState("");
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -29,7 +32,7 @@ export default function Signup() {
         setUsername("");
         setEmail("");
         setPassword("");
-        window.location.href = `/profile/${response.data.userId}`;
+        navigate(`/profile/${response.data.userId}`);
         toast.success("User signed up successfully", {
           position: "bottom-center",
           autoClose: 5000,
@@ -55,6 +58,7 @@ export default function Signup() {
       });
     }
   };
+
 
   return (
     <>
@@ -171,3 +175,5 @@ export default function Signup() {
     </>
   );
 }
+
+export default Signup
