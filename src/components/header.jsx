@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Header = () => {
   return (
@@ -7,11 +9,11 @@ const Header = () => {
         <div className="flex items-center space-x-4">
           <h1 className="text-3xl font-bold text-pink-500">Dribble</h1>
           <div className="hidden md:flex items-center space-x-4">
-            <a href="#" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md  text-base font-semibold">Inspiration</a>
-            <a href="/find-work" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-semibold">Find work</a>
-            <a href="#" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-semibold">Learn Design</a>
-            <a href="#" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-semibold">Go pro</a>
-            <a href="#" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-semibold">Hire Designers</a>
+          <Link to="/find-work" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-semibold">Inspiration</Link>
+            <Link to="/find-work" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-semibold">Find work</Link>
+            <Link to="/find-work" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-semibold">Learn Design</Link>
+            <Link to="/find-work" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-semibold">Go pro</Link>
+            <Link to="/find-work" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-semibold">Hire Designers</Link>
           </div>
         </div>
       </div>
