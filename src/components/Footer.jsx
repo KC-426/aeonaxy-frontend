@@ -61,7 +61,7 @@ export default function Footer() {
 
           <div className="footer-main-section">
             <div>
-              <h1 className="font-bold text-xl mb-4">For Foreiner</h1>
+              <h1 className="font-bold text-base mb-4">For Foreiner</h1>
             </div>
             <div className="footer-list-design font-semibold font-semibold">
               <ul>Go Pro!</ul>
@@ -77,7 +77,7 @@ export default function Footer() {
 
           <div className="footer-main-section">
             <div>
-              <h1 className="font-bold text-xl mb-4">Hire Designers</h1>
+              <h1 className="font-bold text-base mb-4">Hire Designers</h1>
             </div>
             <div className="footer-list-design font-semibold">
               <ul>Post a job opening</ul>
@@ -85,7 +85,7 @@ export default function Footer() {
               <ul>Search for designers</ul>
             </div>
             <div>
-              <h1 className="font-bold text-xl mb-4 mt-4">Brands</h1>
+              <h1 className="font-bold text-base mb-4 mt-4">Brands</h1>
             </div>
 
             <div className="footer-list-design font-semibold">
@@ -95,7 +95,7 @@ export default function Footer() {
 
           <div className="footer-main-section">
             <div>
-              <h1 className="font-bold text-xl mb-4">Company</h1>
+              <h1 className="font-bold text-base mb-4">Company</h1>
             </div>
             <div className="footer-list-design font-semibold">
               <ul>About</ul>
@@ -112,7 +112,7 @@ export default function Footer() {
 
           <div className="footer-main-section">
             <div>
-              <h1 className="font-bold text-xl mb-4">Directories</h1>
+              <h1 className="font-bold text-base mb-4">Directories</h1>
             </div>
             <div className="footer-list-design font-semibold">
               <ul>Design jobs</ul>
@@ -122,7 +122,7 @@ export default function Footer() {
               <ul>Places</ul>
             </div>
             <div>
-              <h1 className="font-bold text-xl mb-4 mt-4">Design Assests</h1>
+              <h1 className="font-bold text-base mb-4 mt-4">Design Assests</h1>
             </div>
             <div className="footer-list-design font-semibold">
               <ul>Dribble Marketplace</ul>
@@ -134,7 +134,7 @@ export default function Footer() {
 
           <div className="footer-main-section">
             <div>
-              <h1 className="font-bold text-xl mb-4">Design Resources</h1>
+              <h1 className="font-bold text-base mb-4">Design Resources</h1>
             </div>
             <div className="footer-list-design font-semibold">
               <ul>Freelancing</ul>
