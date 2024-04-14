@@ -157,7 +157,7 @@ const Signup = () => {
                   </p>
                 </div>
 
-                <div className="mt-20 ">
+                <div className="mt-5 ">
                   <button className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-14 rounded-md">
                     Create Account
                   </button>
@@ -176,4 +176,5 @@ const Signup = () => {
   );
 }
 
-export default Signup
+
+export default Signup;

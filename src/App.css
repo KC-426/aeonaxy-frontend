@@ -1,11 +1,11 @@
 .footer-section-view{
     width: 100%;
 }
-.dribbble-data{
+.dribble-data{
     width: 25%;
     margin-left: 20px;
 }
-.footer-main-section{
+.footer-main-section{ 
     width: 22%;
 }
 .footer-list-design ul{
@@ -28,3 +28,28 @@
     border-radius: 10px;
     margin: 20px;
 }
+
+@media screen and (max-width: 1024px) {
+    .lg:flex-row {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .lg:w-1/2 {
+      width: 100%;
+    }
+  
+    .p-20 {
+      padding: 20px;
+    }
+  
+    .mt-20 {
+      margin-top: 20px;
+    }
+  
+    .mt-5 {
+      margin-top: 5px;
+    }
+  }
+  

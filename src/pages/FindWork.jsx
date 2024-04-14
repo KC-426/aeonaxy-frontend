@@ -8,7 +8,7 @@ export default function FindWork() {
       <div className="container mx-auto">
         <div className="mb-10 md:mb-20">
           <h1 className="text-center font-bold text-3xl md:text-5xl mt-10 md:mt-20">
-            What brings you to Bribble?
+            What brings you to Dribble?
           </h1>
           <h2 className="text-center text-lg md:text-xl mt-4 md:mt-8 text-gray-500">
             Select the options that best describe you. Don't worry, you can

@@ -5,13 +5,15 @@ import {
   faPinterest,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
+import "../App.css"
 
 export default function Footer() {
   return (
     <>
       <div className=" mx-auto bg-gray-50 py-10">
         <div className="flex footer-section-view">
-          <div className="dribbble-data px-12">
+
+          <div className="dribble-data px-12">
             <div>
               <h1 className="text-3xl font-bold text-pink-500">Dribble</h1>
             </div>
@@ -55,6 +57,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
+
 
           <div className="footer-main-section">
             <div>
