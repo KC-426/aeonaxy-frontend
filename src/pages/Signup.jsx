@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 import Paper from "@mui/material/Paper";
 import TextField from "@mui/material/TextField"; 
 
-
 const Signup = () => {
   const navigate = useNavigate();
 
@@ -19,13 +18,11 @@ const Signup = () => {
     e.preventDefault();
     try {
       const url = `${import.meta.env.VITE_APP_BASE_URL}/user/signup`;
-      console.log(url);
       const response = await axios.post(
         url,
         { name, username, email, password },
         { withCredentials: true }
       );
-      console.log(response);
 
       if (response.data.success) {
         setName("");
@@ -59,23 +56,14 @@ const Signup = () => {
     }
   };
 
-
   return (
     <>
       <Paper>
         <ToastContainer />
         <div className="flex flex-col lg:flex-row items-center justify-center">
-          <div className="lg:w-1/2">
-            <img
-              className="h-screen w-full object-cover"
-              src="/images/signup.jpg"
-              alt=""
-            />
-          </div>
-
-          <div className="lg:w-1/2 p-20">
+          <div className="lg:w-1/2 order-2 lg:order-1 p-8 lg:px-20 lg:py-10">
             <div>
-              <h1 className="mt-20 text-center lg:text-left text-4xl font-semibold">
+              <h1 className="mt-10 text-center lg:text-left text-4xl font-semibold">
                 Sign up to dribble
               </h1>
               <h3 className="text-center lg:text-left text-2xl text-red-400">
@@ -83,7 +71,7 @@ const Signup = () => {
               </h3>
             </div>
 
-            <form onSubmit={userSignup} className="mt-20">
+            <form onSubmit={userSignup} className="mt-10">
               <div className="grid gap-6">
                 <div className="flex flex-col lg:flex-row justify-between">
                   <div className="mb-6 lg:mb-0 w-full lg:w-1/2 pr-2">
@@ -170,11 +158,18 @@ const Signup = () => {
               and Terms of service apply.
             </div>
           </div>
+
+          <div className="lg:w-1/2 order-1 lg:order-2">
+            <img
+              className="h-screen w-full object-cover"
+              src="/images/signup.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </Paper>
     </>
   );
 }
-
 
 export default Signup;
